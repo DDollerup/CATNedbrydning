@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CAT Nedbrydning - @ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Content/CSS/main-columns.css" rel="stylesheet" />
+    <link href="/Content/CSS/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container" id="dropShadow">
+        <header>
+            <h1>
+                CAT <span>Nedbrydning</span>
+            </h1>
+            <span>alt i kontrolleret nedbrydning</span>
+            <nav>
+                <ul>
+                    <li><a href="/Home/Index">Home</a></li>
+                    <li>|</li>
+                    <li><a href="/Home/Crushing">Nedbrydning</a></li>
+                    <li>|</li>
+                    <li><a href="#">Knusning</a></li>
+                    <li>|</li>
+                    <li><a href="#">Miljø</a></li>
+                    <li>|</li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            @RenderBody()
+        </main>
+        <footer>
+            <div>
+                <ul>
+                    <li>CAT Nedbrydning A/S</li>
+                    <li>Danmarksgade 157</li>
+                    <li>DK-8000 Århus C</li>
+                    <li>Tlf: +45 5631 3003</li>
+                </ul>
+            </div>
+            <div class="clearFix"></div>
+        </footer>
+    </div>
+</body>
+</html>
