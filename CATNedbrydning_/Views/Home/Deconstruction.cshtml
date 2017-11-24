@@ -1,10 +1,10 @@
 ﻿@model Subpage
 @{
-    ViewBag.Title = "Crushing";
+    ViewBag.Title = "Deconstruction";
 }
 
 <div class="row">
-    <div class="col-8">
+    <div class="col-12">
         <h2>
             <i>
                 @Model.Title
@@ -13,8 +13,5 @@
         <p>
             @Html.Raw(Model.PageContent.Replace("\n", "<br />"))
         </p>
-    </div>
-    <div class="col-4">
-        <img src="/Content/Images/@Model.Image" class="img-responsive" />
     </div>
 </div>

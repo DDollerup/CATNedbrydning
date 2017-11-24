@@ -106,7 +106,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Crushing.cs" />
+    <Compile Include="Models\Deconstruction.cs" />
+    <Compile Include="Models\Environment.cs" />
     <Compile Include="Models\Home.cs" />
+    <Compile Include="Models\Subpage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -117,6 +121,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Crushing.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Deconstruction.cshtml" />
+    <Content Include="Views\Home\Environment.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

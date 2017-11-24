@@ -1,7 +1,31 @@
-﻿
+﻿@model Contact
 @{
     ViewBag.Title = "Contact";
 }
 
-<h2>Contact</h2>
+<div class="row">
+    <div class="col-8">
+        <h2>
+            <i>
+                @Model.Title
+            </i>
+        </h2>
+        <p>
+            @Html.Raw(Model.Address.Replace("\n","<br />"))
+        </p>
+        <p>
+            Tlf: @Model.Phone
+            <br />
+            Fax: @Model.Fax
+        </p>
+        <p>
+            @Model.Email
+            <br />
+            @Model.Website
+        </p>
+    </div>
+    <div class="col-4">
+        <img src="/Content/Images/@Model.Image" class="img-responsive" />
+    </div>
+</div>
 
